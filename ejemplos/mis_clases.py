@@ -7,32 +7,39 @@
 # Puede usar las mismas clases usadas en Java en los ejemplos estudiados
 
 # clase 01
-class Persona:
-    def __init__(self, per1):
-        self.per1 = per1
 
-    def saludo(self):
+class Telefonos:
+    marca = ''
+    imei = ''
+    color = ''
+    modelo = ''
 
-        print(f"Bienvenido, {self.per1} a este apocento de las matemáticas")
+    def __init__(self, marc, im, c, m):
+        self.marca = marc
+        self.imei = im
+        self.color = c
+        self.modelo = m
 
+    def __str__(self):
+        cadena = "Marca: {}\nimei: {}\nColor: {}\nMdelo: {}".format(
+            self.marca, self.imei, self.color, self.modelo)
+        return cadena
 
-per1 = Persona("Juan Gonzalez")
-per1.saludo()
 
 
 
 # clase 02
-class triang:
-    """
-    Defineel área de un triángulo.
-    """
-    def __init__(self, b, h):
-        self.b = b
-        self.h = h
+class Colegios:
+    nombre = ''
+    cantAlumn = 0
+    tipo = ''
 
+    def __init__(self, nom, c, tp):
+        self.nombre = nom
+        self.cantAlumn = c
+        self.tipo = tp
 
-    def area(self):
-        return (self.b * self.h)/2
-
-triang =triang(10, 10)
-print("Área del triángulo es: ", triang.area(), "metros")
+    def __str__(self):
+        cadena = "Colegios\nNombre del colegio: {}\nCantidad de Alumnos: {}\nTipo: {}".format(
+            self.nombre, self.cantAlumn, self.tipo)
+        return cadena

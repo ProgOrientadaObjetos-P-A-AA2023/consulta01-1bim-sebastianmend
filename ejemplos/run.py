@@ -2,32 +2,33 @@
 
 """
 # Crear dos objetos de la clase 01
+from mis_clases import Telefonos
 
-class Alumno:
 # objeto 01
 
-    def __init__(self, nom, cal):
-        self.nombre = nom
-        self.calificacion = cal
-
-    def __str__(self):
-        return f"Alumno: {self.nombre} \nNota: {self.calificacion}"
-
-
 # crear
-al1 = Alumno("Michelena", 9.99)
-# Presentar objeto; usar el método __st__
-print(al1)
-# objeto 02
 
+iphone = Telefonos('Apple','92182982','REd','Iphone 13')
+
+# Presentar objeto; usar el método __st__
+
+print(str(iphone))
+
+# objeto 02
 
 # crear ingresando valores por teclado
 
-nombre2 = input("Ingresa el nombre del segundo estudiante: ")
-calificacion2 = int(input("Ingresa la calificacion obtenida: "))
-al2 = Alumno(nombre2, calificacion2)
+print("Marca:")
+marc = input()
+print("Imei:")
+im= input()
+print("Color:")
+color = input()
+print("Modelo:")
+model = int(input())
+
+telefono2 = Telefonos(marc,im,color,model)
 
 # Presentar objeto; usar el método __st__
-print(al2)
 
-
+print(str(telefono2))

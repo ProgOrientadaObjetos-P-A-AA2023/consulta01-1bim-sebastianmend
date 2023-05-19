@@ -3,31 +3,31 @@
 """
 # Crear dos objetos de la clase 02
 
-class Celulares:
+from mis_clases import Colegios
+
 # objeto 01
 
-    def __init__(self, marc, m):
-        self.marca = marc
-        self.modelo = m
-
-    def __str__(self):
-        return f"Teléfono: {self.marca} \nModelo: {self.modelo}"
-
-
 # crear
-telefono1 = Celulares("Apple", "Iphone 13")
+
+cole1 = Colegios("Mater Dei",100,"Fiscomisional")
+
 # Presentar objeto; usar el método __st__
-print(telefono1)
+
+print(str(cole1))
+
 # objeto 02
 
+print("Ingrese el nombre del colegio")
+nom = input()
+print("ingrese la cantidad de alumnos")
+cant = int(input())
+print("Ingrese el tipo de institución:")
+tp = input()
 
 # crear ingresando valores por teclado
-marca2 = input("Ingresa la marca del teléfono: ")
-modelo2 = input("Ingresa el modelo del telefono: ")
 
-
-telefono2 = Celulares(marca2, modelo2)
+cole2 =Colegios(nom,cant,tp)
 
 # Presentar objeto; usar el método __st__
-print(telefono2)
 
+print(str(cole2))
